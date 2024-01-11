@@ -31,7 +31,6 @@ exportBtn.onclick = function (e) {
     aEl.href = csvUrl;
     aEl.download = `${crypto.randomUUID()}.csv`;
     aEl.click();
-    console.log(csv);
 }
 
 function rowCsvFormat(row) {
@@ -39,7 +38,6 @@ function rowCsvFormat(row) {
         .map(item => item.data)
         .join(",");
 }
-
 
 const spreadsheet = initSpreadsheet();
 
